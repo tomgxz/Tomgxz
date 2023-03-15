@@ -1,20 +1,21 @@
 # Hello
 
-Im @Tomgxz, and I code stuff!
+Im Tom_gxz, and I code stuff!
 
-# I can code...
+### I can code...
 
 - Python
 + Object-Oriented
 + Databases
 + Graphical Interfaces: Python, Tkinter, Kivy
 + Discord
-+ Web Hosting and Designing
++ Web Hosting and Design
 - Java
++ Android Studio
 + Minecraft Plugins and Mods
 + Database Integration
-- HTML
+- HTML, CSS and Javascript
 
-I have many years of competent experience in coding for various different programms.
+I have many years of experience coding for various different programs.
 
-My most recent codeing project was a [pygame plumbing game](https://github.com/Tomgxz/plumber)
+My current project is a [functional website builder](https://github.com/Tomgxz/Kraken)
