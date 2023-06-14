@@ -5,9 +5,6 @@ Im Tom_gxz, and I make code that is horrific to read.
 ![Tomgxz's GitHub stats](https://github-readme-stats.vercel.app/api?username=Tomgxz&show_icons=true&theme=holi&hide_border=true&bg_color=00000000&include_all_commits=false)
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Tomgxz&theme=holi&hide_border=true&bg_color=00000000&layout=compact)
 
-<!-- ![Tomgxz's wakatime stats](https://github-readme-stats.vercel.app/api/wakatime?username=Tomgxz) -->
-
-
 ### I can code...
 
 - <code><img height="20" alt="python" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/python/python.png"></code> Python
@@ -49,6 +46,9 @@ My current, and largest, project is a [functional website builder](https://githu
   <source media="(prefers-color-scheme: light)" srcset="github-user-contribution-light.svg" />
   <img alt="github-snake" src="github-user-contribution.svg" />
 </picture>
+
+![Tomgxz's wakatime stats](https://github-readme-stats.vercel.app/api/wakatime?username=tom_gxz&theme=holi&hide_border=true&bg_color=00000000&custom_title=Programming%20Time) 
+
 
 <!--
 <a href="https://twitter.com/">
