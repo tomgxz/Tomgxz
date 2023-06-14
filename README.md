@@ -1,4 +1,3 @@
-
 # Hello 👋
 
 Im Tom_gxz, and I make code that is horrific to read.
@@ -41,3 +40,11 @@ Im Tom_gxz, and I make code that is horrific to read.
 I have many years of experience programming for various different applications.
 
 My current, and largest, project is a [functional website builder](https://github.com/Tomgxz/Kraken).
+
+[![Kraken](https://github-readme-stats.vercel.app/api/pin/?username=Tomgxz&repo=Kraken&theme=holi&show_icons=true&hide_border=true&bg_color=00000000)](https://www.github.com/Tomgxz/Kraken)
+[![Kraken](https://github-readme-stats.vercel.app/api/pin/?username=Tomgxz&repo=SchwimbleGromp-v2&theme=holi&show_icons=true&hide_border=true&bg_color=00000000)](https://www.github.com/Tomgxz/SchwimbleGromp-v2)
+
+<!--
+<a href="https://twitter.com/">
+  <img align="right" alt="Twitter" width="21px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Logo_of_Twitter.svg/768px-Logo_of_Twitter.svg.png?20220821125553" />
+</a>-->
