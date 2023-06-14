@@ -44,6 +44,12 @@ My current, and largest, project is a [functional website builder](https://githu
 [![Kraken](https://github-readme-stats.vercel.app/api/pin/?username=Tomgxz&repo=Kraken&theme=holi&show_icons=true&hide_border=true&bg_color=00000000)](https://www.github.com/Tomgxz/Kraken)
 [![Kraken](https://github-readme-stats.vercel.app/api/pin/?username=Tomgxz&repo=SchwimbleGromp-v2&theme=holi&show_icons=true&hide_border=true&bg_color=00000000)](https://www.github.com/Tomgxz/SchwimbleGromp-v2)
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="github-user-contribution.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="github-user-contribution-light.svg" />
+  <img alt="github-snake" src="github-user-contribution.svg" />
+</picture>
+
 <!--
 <a href="https://twitter.com/">
   <img align="right" alt="Twitter" width="21px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Logo_of_Twitter.svg/768px-Logo_of_Twitter.svg.png?20220821125553" />
