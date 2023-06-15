@@ -2,8 +2,8 @@
 
 Im Tom_gxz, and I make code that is horrific to read.
 
-![Tomgxz's GitHub stats](https://github-readme-stats.vercel.app/api?username=Tomgxz&show_icons=true&theme=holi&hide_border=true&bg_color=00000000&include_all_commits=false)
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Tomgxz&theme=holi&hide_border=true&bg_color=00000000&layout=compact)
+![GitHub stats](https://github-readme-stats.vercel.app/api?username=Tomgxz&show_icons=true&theme=holi&hide_border=true&bg_color=00000000&include_all_commits=false)
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Tomgxz&theme=holi&hide_border=true&bg_color=00000000&layout=compact)
 
 ### I can code...
 
@@ -47,7 +47,7 @@ My current, and largest, project is a [functional website builder](https://githu
   <img alt="github-snake" src="github-user-contribution.svg" />
 </picture>
 
-![Tomgxz's wakatime stats](https://github-readme-stats.vercel.app/api/wakatime?username=tom_gxz&theme=holi&hide_border=true&bg_color=00000000&custom_title=Programming%20Time) 
+![Programming Time Stats](https://github-readme-stats.vercel.app/api/wakatime?username=tom_gxz&theme=holi&hide_border=true&bg_color=00000000&custom_title=Programming%20Time) 
 
 
 <!--
