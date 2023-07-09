@@ -47,7 +47,7 @@ My current, and largest, project is a [functional website builder](https://githu
   <img alt="github-snake" src="github-user-contribution.svg" />
 </picture>
 
-![Programming Time Stats](https://github-readme-stats.vercel.app/api/wakatime?username=tom_gxz&theme=holi&hide_border=true&bg_color=00000000&custom_title=Programming%20Time) 
+![Programming Time Stats](https://github-readme-stats.vercel.app/api/wakatime?username=tom_gxz&theme=holi&hide_border=true&bg_color=00000000&custom_title=Programming%20Time%20This%20Week) 
 
 
 <!--
