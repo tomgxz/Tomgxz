@@ -39,7 +39,7 @@ I have many years of experience programming for various different applications.
 My current, and largest, project is a [functional website builder](https://github.com/Tomgxz/Kraken).
 
 [![Kraken](https://github-readme-stats.vercel.app/api/pin/?username=Tomgxz&repo=Kraken&theme=holi&show_icons=true&hide_border=true&bg_color=00000000)](https://www.github.com/Tomgxz/Kraken)
-[![Kraken](https://github-readme-stats.vercel.app/api/pin/?username=Tomgxz&repo=Mic-Plot-Generator&theme=holi&show_icons=true&hide_border=true&bg_color=00000000)](https://www.github.com/Tomgxz/SchwimbleGromp-v2)
+[![Mic-Plot-Generator](https://github-readme-stats.vercel.app/api/pin/?username=Tomgxz&repo=Mic-Plot-Generator&theme=holi&show_icons=true&hide_border=true&bg_color=00000000)](https://www.github.com/Tomgxz/Mic-Plot-Generator)
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="github-user-contribution.svg" />
