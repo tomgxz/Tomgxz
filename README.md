@@ -47,6 +47,13 @@ My current, and largest, project is a [functional website builder](https://githu
   <img alt="github-snake" src="github-user-contribution.svg" />
 </picture>
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Tomgxz/Tomgxz/output/github-contribution-grid-snake-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Tomgxz/Tomgxz/output/github-contribution-grid-snake.svg">
+  <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/Tomgxz/Tomgxz/output/github-contribution-grid-snake.svg">
+</picture>
+
+
 ![Programming Time Stats](https://github-readme-stats.vercel.app/api/wakatime?username=tom_gxz&theme=holi&hide_border=true&bg_color=00000000&custom_title=Programming%20Time%20This%20Week) 
 
 
