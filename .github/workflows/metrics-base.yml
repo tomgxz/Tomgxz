@@ -1,0 +1,104 @@
+name: Metrics Embed - Base
+
+on:
+  # run automatically every 24 hours
+  schedule:
+    - cron: "0 0 * * *" 
+  
+  # allows to manually run the job at any time
+  workflow_dispatch:
+  
+  # run on every push on the master branch
+  push:
+    branches:
+    - master
+    
+jobs:
+  examples:
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: 🗃️ Base content - Default metrics
+        uses: lowlighter/metrics@master
+        with:
+          filename: metrics.base.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: header, activity, community, repositories, metadata
+          output_action: none
+          delay: 120
+          user: lowlighter
+          plugins_errors_fatal: yes
+        if: ${{ success() || failure() }}
+
+      - name: 🧱 Core - Large display
+        uses: lowlighter/metrics@master
+        with:
+          filename: metrics.large.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          config_display: large
+          output_action: none
+          delay: 120
+          user: lowlighter
+          plugins_errors_fatal: yes
+        if: ${{ success() || failure() }}
+
+      - name: 📗 Classic template - Example
+        uses: lowlighter/metrics@master
+        with:
+          filename: metrics.classic.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: header, repositories
+          plugin_lines: yes
+          output_action: none
+          delay: 120
+          user: lowlighter
+          plugins_errors_fatal: yes
+        if: ${{ success() || failure() }}
+
+      - name: 📰 Recent activity - Recent activity
+        uses: lowlighter/metrics@master
+        with:
+          filename: metrics.plugin.activity.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
+          plugin_activity: yes
+          plugin_activity_limit: 5
+          plugin_activity_days: 0
+          plugin_activity_filter: issue, pr, release, fork, review, ref/create
+          output_action: none
+          delay: 120
+          user: lowlighter
+          plugins_errors_fatal: yes
+        if: ${{ success() || failure() }}
+
+      - name: 🗂️ GitHub projects - Project from a repository
+        uses: lowlighter/metrics@master
+        with:
+          filename: metrics.plugin.projects.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
+          plugin_projects: yes
+          plugin_projects_repositories: lowlighter/metrics/projects/1
+          plugin_projects_descriptions: yes
+          output_action: none
+          delay: 120
+          user: lowlighter
+          plugins_errors_fatal: yes
+        if: ${{ success() || failure() }}
+
+      - name: ⏰ WakaTime - WakaTime
+        uses: lowlighter/metrics@master
+        with:
+          filename: metrics.plugin.wakatime.svg
+          token: NOT_NEEDED
+          base: ""
+          plugin_wakatime: yes
+          plugin_wakatime_sections: time, projects, projects-graphs, languages, languages-graphs, editors, os
+          plugin_wakatime_token: MOCKED_TOKEN
+          use_mocked_data: yes
+          output_action: none
+          delay: 120
+          user: lowlighter
+          plugins_errors_fatal: yes
+        if: ${{ success() || failure() }}

@@ -1,0 +1,74 @@
+name: Metrics Embed - Calendar
+
+on:
+  # run automatically every 24 hours
+  schedule:
+    - cron: "0 0 * * *" 
+  
+  # allows to manually run the job at any time
+  workflow_dispatch:
+  
+  # run on every push on the master branch
+  push:
+    branches:
+    - master
+    
+jobs:
+  examples:
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: 📅 Isometric commit calendar - Half-year calendar
+        uses: lowlighter/metrics@master
+        with:
+          filename: metrics.plugin.isocalendar.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
+          plugin_isocalendar: yes
+          output_action: none
+          delay: 120
+          user: lowlighter
+          plugins_errors_fatal: yes
+        if: ${{ success() || failure() }}
+
+      - name: 📅 Isometric commit calendar - Full-year calendar
+        uses: lowlighter/metrics@master
+        with:
+          filename: metrics.plugin.isocalendar.fullyear.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: full-year
+          output_action: none
+          delay: 120
+          user: lowlighter
+          plugins_errors_fatal: yes
+        if: ${{ success() || failure() }}
+
+      - name: 📆 Commit calendar - Current year calendar
+        uses: lowlighter/metrics@master
+        with:
+          filename: metrics.plugin.calendar.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
+          plugin_calendar: yes
+          output_action: none
+          delay: 120
+          user: lowlighter
+          plugins_errors_fatal: yes
+        if: ${{ success() || failure() }}
+
+      - name: 📆 Commit calendar - Full history calendar
+        uses: lowlighter/metrics@master
+        with:
+          filename: metrics.plugin.calendar.full.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
+          plugin_calendar: yes
+          plugin_calendar_limit: 0
+          output_action: none
+          delay: 120
+          user: lowlighter
+          plugins_errors_fatal: yes
+        if: ${{ success() || failure() }}

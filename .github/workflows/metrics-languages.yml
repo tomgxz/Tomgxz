@@ -1,9 +1,9 @@
-name: metrics embed test
+name: Metrics Embed - Languages
 
 on:
   # run automatically every 24 hours
   schedule:
-    - cron: "0 */24 * * *" 
+    - cron: "0 0 * * *" 
   
   # allows to manually run the job at any time
   workflow_dispatch:
@@ -14,20 +14,8 @@ on:
     - master
     
 jobs:
-  generate:
-    runs-on: ubuntu-latest
-    timeout-minutes: 10
-    
-    steps:
-      - name: Generate metrics
-        uses: lowlighter/metrics@v3.32
-        with:
-            token: ${{ secrets.GITHUB_TOKEN }}
-
-
   examples:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
 
     steps:
 
@@ -62,8 +50,6 @@ jobs:
           plugins_errors_fatal: yes
         if: ${{ success() || failure() }}
 
-
-
       - name: 🈷️ Languages activity - Indepth analysis
         uses: lowlighter/metrics@master
         with:
@@ -83,7 +69,3 @@ jobs:
           user: lowlighter
           plugins_errors_fatal: yes
         if: ${{ success() || failure() }}
-
-
-
-

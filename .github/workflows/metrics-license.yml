@@ -1,0 +1,54 @@
+name: Metrics Embed - License
+
+on:
+  # run automatically every 24 hours
+  schedule:
+    - cron: "0 0 * * *" 
+  
+  # allows to manually run the job at any time
+  workflow_dispatch:
+  
+  # run on every push on the master branch
+  push:
+    branches:
+    - master
+    
+jobs:
+  examples:
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: 📜 Repository licenses - Licenses and permissions
+        with:
+          filename: metrics.plugin.licenses.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
+          template: repository
+          repo: metrics
+          plugin_licenses: yes
+          plugin_licenses_setup: bash -c '[[ -f package.json ]] && npm ci || true'
+          output_action: none
+          delay: 120
+          user: lowlighter
+          plugins_errors_fatal: yes
+        if: ${{ success() || failure() }}
+        uses: lowlighter/metrics@master
+
+      - name: 📜 Repository licenses - Licenses with open-source ratio graphs
+        uses: lowlighter/metrics@master
+        with:
+          filename: metrics.plugin.licenses.ratio.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
+          template: repository
+          repo: metrics
+          plugin_licenses: yes
+          plugin_licenses_setup: bash -c '[[ -f package.json ]] && npm ci || true'
+          plugin_licenses_legal: no
+          plugin_licenses_ratio: yes
+          output_action: none
+          delay: 120
+          user: lowlighter
+          plugins_errors_fatal: yes
+        if: ${{ success() || failure() }}
