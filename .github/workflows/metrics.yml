@@ -9,7 +9,7 @@ on:
   workflow_dispatch:
   
   # run on every push on the master branch
-  push:
+  push:f
     branches:
     - master
     
@@ -85,8 +85,6 @@ jobs:
           plugins_errors_fatal: yes
         if: ${{ success() || failure() }}
 
-
-
       - name: 🈷️ Languages activity - Most used (with details)
         uses: lowlighter/metrics@master
         with:
@@ -94,9 +92,6 @@ jobs:
           token: ${{ secrets.METRICS_TOKEN }}
           base: ""
           plugin_languages: yes
-          plugin_languages_ignored: >-
-            html, css, tex, less, dockerfile, makefile, qmake, lex, cmake, shell,
-            gnuplot
           plugin_languages_details: bytes-size, percentage
           plugin_languages_limit: 4
           output_action: none
@@ -112,9 +107,6 @@ jobs:
           token: ${{ secrets.METRICS_TOKEN }}
           base: ""
           plugin_languages: yes
-          plugin_languages_ignored: >-
-            html, css, tex, less, dockerfile, makefile, qmake, lex, cmake, shell,
-            gnuplot
           plugin_languages_sections: recently-used
           plugin_languages_details: bytes-size, percentage
           plugin_languages_limit: 4
