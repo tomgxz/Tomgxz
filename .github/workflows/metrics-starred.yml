@@ -27,9 +27,11 @@ jobs:
           base: ""
           plugin_topics: yes
           plugin_topics_limit: 12
-          output_action: none
+          output_action: commit
+          committer_branch: metrics-renders
+          committer_message: "Workflow: update Metrics Embed - Starred"
           delay: 120
-          user: lowlighter
+          user: Tomgxz
           plugins_errors_fatal: yes
         if: ${{ success() || failure() }}
 
@@ -42,22 +44,10 @@ jobs:
           plugin_topics: yes
           plugin_topics_limit: 0
           plugin_topics_mode: icons
-          output_action: none
+          output_action: commit
+          committer_branch: metrics-renders
+          committer_message: "Workflow: update Metrics Embed - Starred"
           delay: 120
-          user: lowlighter
-          plugins_errors_fatal: yes
-        if: ${{ success() || failure() }}
-
-      - name: 🌟 Recently starred repositories - Recently starred
-        uses: lowlighter/metrics@master
-        with:
-          filename: metrics.plugin.stars.svg
-          token: ${{ secrets.METRICS_TOKEN }}
-          base: ""
-          plugin_stars: yes
-          plugin_stars_limit: 3
-          output_action: none
-          delay: 120
-          user: lowlighter
+          user: Tomgxz
           plugins_errors_fatal: yes
         if: ${{ success() || failure() }}

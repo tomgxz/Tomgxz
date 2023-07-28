@@ -25,9 +25,11 @@ jobs:
           filename: metrics.base.svg
           token: ${{ secrets.METRICS_TOKEN }}
           base: header, activity, community, repositories, metadata
-          output_action: none
+          output_action: commit
+          committer_branch: metrics-renders
+          committer_message: "Workflow: update Metrics Embed - Base"
           delay: 120
-          user: lowlighter
+          user: Tomgxz
           plugins_errors_fatal: yes
         if: ${{ success() || failure() }}
 
@@ -37,9 +39,11 @@ jobs:
           filename: metrics.large.svg
           token: ${{ secrets.METRICS_TOKEN }}
           config_display: large
-          output_action: none
+          output_action: commit
+          committer_branch: metrics-renders
+          committer_message: "Workflow: update Metrics Embed - Base"
           delay: 120
-          user: lowlighter
+          user: Tomgxz
           plugins_errors_fatal: yes
         if: ${{ success() || failure() }}
 
@@ -50,9 +54,11 @@ jobs:
           token: ${{ secrets.METRICS_TOKEN }}
           base: header, repositories
           plugin_lines: yes
-          output_action: none
+          output_action: commit
+          committer_branch: metrics-renders
+          committer_message: "Workflow: update Metrics Embed - Base"
           delay: 120
-          user: lowlighter
+          user: Tomgxz
           plugins_errors_fatal: yes
         if: ${{ success() || failure() }}
 
@@ -66,9 +72,11 @@ jobs:
           plugin_activity_limit: 5
           plugin_activity_days: 0
           plugin_activity_filter: issue, pr, release, fork, review, ref/create
-          output_action: none
+          output_action: commit
+          committer_branch: metrics-renders
+          committer_message: "Workflow: update Metrics Embed - Base"
           delay: 120
-          user: lowlighter
+          user: Tomgxz
           plugins_errors_fatal: yes
         if: ${{ success() || failure() }}
 
@@ -81,9 +89,11 @@ jobs:
           plugin_projects: yes
           plugin_projects_repositories: lowlighter/metrics/projects/1
           plugin_projects_descriptions: yes
-          output_action: none
+          output_action: commit
+          committer_branch: metrics-renders
+          committer_message: "Workflow: update Metrics Embed - Base"
           delay: 120
-          user: lowlighter
+          user: Tomgxz
           plugins_errors_fatal: yes
         if: ${{ success() || failure() }}
 
@@ -97,8 +107,10 @@ jobs:
           plugin_wakatime_sections: time, projects, projects-graphs, languages, languages-graphs, editors, os
           plugin_wakatime_token: MOCKED_TOKEN
           use_mocked_data: yes
-          output_action: none
+          output_action: commit
+          committer_branch: metrics-renders
+          committer_message: "Workflow: update Metrics Embed - Base"
           delay: 120
-          user: lowlighter
+          user: Tomgxz
           plugins_errors_fatal: yes
         if: ${{ success() || failure() }}

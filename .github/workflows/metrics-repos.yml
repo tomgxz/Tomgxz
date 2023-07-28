@@ -26,9 +26,11 @@ jobs:
           token: ${{ secrets.METRICS_TOKEN }}
           base: ""
           plugin_followup: yes
-          output_action: none
+          output_action: commit
+          committer_branch: metrics-renders
+          committer_message: "Workflow: update Metrics Embed - Repos"
           delay: 120
-          user: lowlighter
+          user: Tomgxz
           plugins_errors_fatal: yes
         if: ${{ success() || failure() }}
 
@@ -40,9 +42,11 @@ jobs:
           base: ""
           plugin_followup: yes
           plugin_followup_indepth: yes
-          output_action: none
+          output_action: commit
+          committer_branch: metrics-renders
+          committer_message: "Workflow: update Metrics Embed - Repos"
           delay: 120
-          user: lowlighter
+          user: Tomgxz
           plugins_errors_fatal: yes
         if: ${{ success() || failure() }}
 
@@ -53,10 +57,12 @@ jobs:
           token: ${{ secrets.METRICS_TOKEN }}
           base: ""
           plugin_repositories: yes
-          plugin_repositories_featured: lowlighter/metrics
-          output_action: none
+          plugin_repositories_featured: Tomgxz/Kraken
+          output_action: commit
+          committer_branch: metrics-renders
+          committer_message: "Workflow: update Metrics Embed - Repos"
           delay: 120
-          user: lowlighter
+          user: Tomgxz
           plugins_errors_fatal: yes
         if: ${{ success() || failure() }}
 
@@ -68,9 +74,11 @@ jobs:
           base: ""
           plugin_repositories: yes
           plugin_repositories_pinned: 2
-          output_action: none
+          output_action: commit
+          committer_branch: metrics-renders
+          committer_message: "Workflow: update Metrics Embed - Repos"
           delay: 120
-          user: lowlighter
+          user: Tomgxz
           plugins_errors_fatal: yes
         if: ${{ success() || failure() }}
 
@@ -81,8 +89,10 @@ jobs:
           token: ${{ secrets.METRICS_TOKEN }}
           base: repositories
           plugin_traffic: yes
-          output_action: none
+          output_action: commit
+          committer_branch: metrics-renders
+          committer_message: "Workflow: update Metrics Embed - Repos"
           delay: 120
-          user: lowlighter
+          user: Tomgxz
           plugins_errors_fatal: yes
         if: ${{ success() || failure() }}

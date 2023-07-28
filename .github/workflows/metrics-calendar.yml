@@ -26,9 +26,11 @@ jobs:
           token: ${{ secrets.METRICS_TOKEN }}
           base: ""
           plugin_isocalendar: yes
-          output_action: none
+          output_action: commit
+          committer_branch: metrics-renders
+          committer_message: "Workflow: update Metrics Embed - Calendar"
           delay: 120
-          user: lowlighter
+          user: Tomgxz
           plugins_errors_fatal: yes
         if: ${{ success() || failure() }}
 
@@ -40,9 +42,11 @@ jobs:
           base: ""
           plugin_isocalendar: yes
           plugin_isocalendar_duration: full-year
-          output_action: none
+          output_action: commit
+          committer_branch: metrics-renders
+          committer_message: "Workflow: update Metrics Embed - Calendar"
           delay: 120
-          user: lowlighter
+          user: Tomgxz
           plugins_errors_fatal: yes
         if: ${{ success() || failure() }}
 
@@ -53,9 +57,11 @@ jobs:
           token: ${{ secrets.METRICS_TOKEN }}
           base: ""
           plugin_calendar: yes
-          output_action: none
+          output_action: commit
+          committer_branch: metrics-renders
+          committer_message: "Workflow: update Metrics Embed - Calendar"
           delay: 120
-          user: lowlighter
+          user: Tomgxz
           plugins_errors_fatal: yes
         if: ${{ success() || failure() }}
 
@@ -67,8 +73,10 @@ jobs:
           base: ""
           plugin_calendar: yes
           plugin_calendar_limit: 0
-          output_action: none
+          output_action: commit
+          committer_branch: metrics-renders
+          committer_message: "Workflow: update Metrics Embed - Calendar"
           delay: 120
-          user: lowlighter
+          user: Tomgxz
           plugins_errors_fatal: yes
         if: ${{ success() || failure() }}
