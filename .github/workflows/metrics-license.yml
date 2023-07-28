@@ -22,11 +22,11 @@ jobs:
       - name: 📜 Repository licenses - Licenses and permissions
         uses: lowlighter/metrics@master
         with:
-          filename: metrics.plugin.licenses.svg
+          filename: metrics.license.plugin.licenses.svg
           token: ${{ secrets.METRICS_TOKEN }}
           base: ""
           template: repository
-          repo: metrics
+          repo: Kraken
           plugin_licenses: yes
           plugin_licenses_setup: bash -c '[[ -f package.json ]] && npm ci || true'
           output_action: commit
@@ -40,11 +40,11 @@ jobs:
       - name: 📜 Repository licenses - Licenses with open-source ratio graphs
         uses: lowlighter/metrics@master
         with:
-          filename: metrics.plugin.licenses.ratio.svg
+          filename: metrics.license.plugin.licenses.ratio.svg
           token: ${{ secrets.METRICS_TOKEN }}
           base: ""
           template: repository
-          repo: metrics
+          repo: Kraken
           plugin_licenses: yes
           plugin_licenses_setup: bash -c '[[ -f package.json ]] && npm ci || true'
           plugin_licenses_legal: no

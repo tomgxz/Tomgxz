@@ -22,7 +22,7 @@ jobs:
       - name: 📌 Starred topics - Labels
         uses: lowlighter/metrics@master
         with:
-          filename: metrics.plugin.topics.svg
+          filename: metrics.starred.plugin.topics.svg
           token: NOT_NEEDED
           base: ""
           plugin_topics: yes
@@ -38,7 +38,7 @@ jobs:
       - name: 📌 Starred topics - Icons
         uses: lowlighter/metrics@master
         with:
-          filename: metrics.plugin.topics.icons.svg
+          filename: metrics.starred.plugin.topics.icons.svg
           token: NOT_NEEDED
           base: ""
           plugin_topics: yes

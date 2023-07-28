@@ -22,23 +22,9 @@ jobs:
       - name: 🗃️ Base content - Default metrics
         uses: lowlighter/metrics@master
         with:
-          filename: metrics.base.svg
+          filename: metrics.base.base.svg
           token: ${{ secrets.METRICS_TOKEN }}
           base: header, activity, community, repositories, metadata
-          output_action: commit
-          committer_branch: metrics-renders
-          committer_message: "Workflow: update Metrics Embed - Base"
-          delay: 120
-          user: Tomgxz
-          plugins_errors_fatal: yes
-        if: ${{ success() || failure() }}
-
-      - name: 🧱 Core - Large display
-        uses: lowlighter/metrics@master
-        with:
-          filename: metrics.large.svg
-          token: ${{ secrets.METRICS_TOKEN }}
-          config_display: large
           output_action: commit
           committer_branch: metrics-renders
           committer_message: "Workflow: update Metrics Embed - Base"
@@ -50,7 +36,7 @@ jobs:
       - name: 📗 Classic template - Example
         uses: lowlighter/metrics@master
         with:
-          filename: metrics.classic.svg
+          filename: metrics.base.classic.svg
           token: ${{ secrets.METRICS_TOKEN }}
           base: header, repositories
           plugin_lines: yes
@@ -62,16 +48,12 @@ jobs:
           plugins_errors_fatal: yes
         if: ${{ success() || failure() }}
 
-      - name: 📰 Recent activity - Recent activity
+      - name: 🧱 Core - Large display
         uses: lowlighter/metrics@master
         with:
-          filename: metrics.plugin.activity.svg
+          filename: metrics.base.large.svg
           token: ${{ secrets.METRICS_TOKEN }}
-          base: ""
-          plugin_activity: yes
-          plugin_activity_limit: 5
-          plugin_activity_days: 0
-          plugin_activity_filter: issue, pr, release, fork, review, ref/create
+          config_display: large
           output_action: commit
           committer_branch: metrics-renders
           committer_message: "Workflow: update Metrics Embed - Base"
@@ -83,12 +65,11 @@ jobs:
       - name: 🗂️ GitHub projects - Project from a repository
         uses: lowlighter/metrics@master
         with:
-          filename: metrics.plugin.projects.svg
+          filename: metrics.base.plugin.projects.svg
           token: ${{ secrets.METRICS_TOKEN }}
           base: ""
           plugin_projects: yes
-          plugin_projects_repositories: lowlighter/metrics/projects/1
-          plugin_projects_descriptions: yes
+          plugin_projects_repositories: Tomgxz/projects/2
           output_action: commit
           committer_branch: metrics-renders
           committer_message: "Workflow: update Metrics Embed - Base"
@@ -100,13 +81,12 @@ jobs:
       - name: ⏰ WakaTime - WakaTime
         uses: lowlighter/metrics@master
         with:
-          filename: metrics.plugin.wakatime.svg
+          filename: metrics.base.plugin.wakatime.svg
           token: NOT_NEEDED
           base: ""
           plugin_wakatime: yes
           plugin_wakatime_sections: time, projects, projects-graphs, languages, languages-graphs, editors, os
-          plugin_wakatime_token: MOCKED_TOKEN
-          use_mocked_data: yes
+          plugin_wakatime_token: ${{ secrets.WAKATIME_TOKEN }}
           output_action: commit
           committer_branch: metrics-renders
           committer_message: "Workflow: update Metrics Embed - Base"

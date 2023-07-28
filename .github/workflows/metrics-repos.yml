@@ -22,42 +22,10 @@ jobs:
       - name: 🎟️ Follow-up of issues and pull requests - Opened on user's repositories
         uses: lowlighter/metrics@master
         with:
-          filename: metrics.plugin.followup.svg
+          filename: metrics.repos.plugin.followup.svg
           token: ${{ secrets.METRICS_TOKEN }}
           base: ""
           plugin_followup: yes
-          output_action: commit
-          committer_branch: metrics-renders
-          committer_message: "Workflow: update Metrics Embed - Repos"
-          delay: 120
-          user: Tomgxz
-          plugins_errors_fatal: yes
-        if: ${{ success() || failure() }}
-
-      - name: 🎟️ Follow-up of issues and pull requests - Indepth analysis
-        uses: lowlighter/metrics@master
-        with:
-          filename: metrics.plugin.followup.indepth.svg
-          token: ${{ secrets.METRICS_TOKEN }}
-          base: ""
-          plugin_followup: yes
-          plugin_followup_indepth: yes
-          output_action: commit
-          committer_branch: metrics-renders
-          committer_message: "Workflow: update Metrics Embed - Repos"
-          delay: 120
-          user: Tomgxz
-          plugins_errors_fatal: yes
-        if: ${{ success() || failure() }}
-
-      - name: 📓 Featured repositories - Featured repositories
-        uses: lowlighter/metrics@master
-        with:
-          filename: metrics.plugin.repositories.svg
-          token: ${{ secrets.METRICS_TOKEN }}
-          base: ""
-          plugin_repositories: yes
-          plugin_repositories_featured: Tomgxz/Kraken
           output_action: commit
           committer_branch: metrics-renders
           committer_message: "Workflow: update Metrics Embed - Repos"
@@ -69,7 +37,7 @@ jobs:
       - name: 📓 Featured repositories - Pinned repositories
         uses: lowlighter/metrics@master
         with:
-          filename: metrics.plugin.repositories.pinned.svg
+          filename: metrics.repos.plugin.repositories.pinned.svg
           token: ${{ secrets.METRICS_TOKEN }}
           base: ""
           plugin_repositories: yes
@@ -85,7 +53,7 @@ jobs:
       - name: 🧮 Repositories traffic - Repositories traffic
         uses: lowlighter/metrics@master
         with:
-          filename: metrics.plugin.traffic.svg
+          filename: metrics.repos.plugin.traffic.svg
           token: ${{ secrets.METRICS_TOKEN }}
           base: repositories
           plugin_traffic: yes

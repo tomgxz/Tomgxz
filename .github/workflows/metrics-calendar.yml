@@ -19,25 +19,10 @@ jobs:
 
     steps:
 
-      - name: 📅 Isometric commit calendar - Half-year calendar
-        uses: lowlighter/metrics@master
-        with:
-          filename: metrics.plugin.isocalendar.svg
-          token: ${{ secrets.METRICS_TOKEN }}
-          base: ""
-          plugin_isocalendar: yes
-          output_action: commit
-          committer_branch: metrics-renders
-          committer_message: "Workflow: update Metrics Embed - Calendar"
-          delay: 120
-          user: Tomgxz
-          plugins_errors_fatal: yes
-        if: ${{ success() || failure() }}
-
       - name: 📅 Isometric commit calendar - Full-year calendar
         uses: lowlighter/metrics@master
         with:
-          filename: metrics.plugin.isocalendar.fullyear.svg
+          filename: metrics.calendar.plugin.isocalendar.svg
           token: ${{ secrets.METRICS_TOKEN }}
           base: ""
           plugin_isocalendar: yes
@@ -50,25 +35,10 @@ jobs:
           plugins_errors_fatal: yes
         if: ${{ success() || failure() }}
 
-      - name: 📆 Commit calendar - Current year calendar
-        uses: lowlighter/metrics@master
-        with:
-          filename: metrics.plugin.calendar.svg
-          token: ${{ secrets.METRICS_TOKEN }}
-          base: ""
-          plugin_calendar: yes
-          output_action: commit
-          committer_branch: metrics-renders
-          committer_message: "Workflow: update Metrics Embed - Calendar"
-          delay: 120
-          user: Tomgxz
-          plugins_errors_fatal: yes
-        if: ${{ success() || failure() }}
-
       - name: 📆 Commit calendar - Full history calendar
         uses: lowlighter/metrics@master
         with:
-          filename: metrics.plugin.calendar.full.svg
+          filename: metrics.calendar.plugin.calendar.svg
           token: ${{ secrets.METRICS_TOKEN }}
           base: ""
           plugin_calendar: yes
