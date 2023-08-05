@@ -22,9 +22,23 @@ jobs:
       - name: 🗃️ Base content - Default metrics
         uses: lowlighter/metrics@master
         with:
-          filename: metrics.base.base.svg
+          filename: metrics.base.all.svg
           token: ${{ secrets.METRICS_TOKEN }}
-          base: header, activity, community, repositories, metadata
+          base: header, activity, community, repositories
+          output_action: commit
+          committer_branch: metrics-renders
+          committer_message: "Workflow: update Metrics Embed - Base"
+          delay: 120
+          user: Tomgxz
+          plugins_errors_fatal: yes
+        if: ${{ success() || failure() }}
+
+      - name: 🗃️ Base content - Default metrics
+        uses: lowlighter/metrics@master
+        with:
+          filename: metrics.base.activity.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: activity, community
           output_action: commit
           committer_branch: metrics-renders
           committer_message: "Workflow: update Metrics Embed - Base"
@@ -36,24 +50,10 @@ jobs:
       - name: 📗 Classic template - Example
         uses: lowlighter/metrics@master
         with:
-          filename: metrics.base.classic.svg
+          filename: metrics.base.concise.svg
           token: ${{ secrets.METRICS_TOKEN }}
           base: header, repositories
           plugin_lines: yes
-          output_action: commit
-          committer_branch: metrics-renders
-          committer_message: "Workflow: update Metrics Embed - Base"
-          delay: 120
-          user: Tomgxz
-          plugins_errors_fatal: yes
-        if: ${{ success() || failure() }}
-
-      - name: 🧱 Core - Large display
-        uses: lowlighter/metrics@master
-        with:
-          filename: metrics.base.large.svg
-          token: ${{ secrets.METRICS_TOKEN }}
-          config_display: large
           output_action: commit
           committer_branch: metrics-renders
           committer_message: "Workflow: update Metrics Embed - Base"
