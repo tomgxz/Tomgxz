@@ -2,10 +2,15 @@
 
 Im Tom_gxz, and I make code that is horrific to read.
 
-![GitHub stats](https://github-readme-stats.vercel.app/api?username=Tomgxz&show_icons=true&theme=holi&hide_border=true&bg_color=00000000&include_all_commits=false)
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Tomgxz&theme=holi&hide_border=true&bg_color=00000000&layout=compact)
+<img src="https://github.com/Tomgxz/Tomgxz/blob/metrics-renders/metrics.base.concise.svg" alt=""></img>
+<img src="https://github.com/Tomgxz/Tomgxz/blob/metrics-renders/metrics.base.activity.svg" alt=""></img>
 
-### I can code...
+<br>
+
+<img src="https://github.com/Tomgxz/Tomgxz/blob/metrics-renders/metrics.languages.plugin.languages.svg" alt=""></img>
+<img src="https://github.com/Tomgxz/Tomgxz/blob/metrics-renders/metrics.starred.plugin.topics.icons.svg" alt=""></img>
+
+<br>
 
 - <code><img height="20" alt="python" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/python/python.png"></code> Python
   + Object-Oriented
@@ -33,13 +38,13 @@ Im Tom_gxz, and I make code that is horrific to read.
   + Discord.js integrations
 - <code><img height="20" alt="sql" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/sql/sql.png"></code> SQL Syntax
 
+<br>
 
-I have many years of experience programming for various different applications.
+<img src="https://github.com/Tomgxz/Tomgxz/blob/metrics-renders/metrics.repos.plugin.repositories.pinned.svg" alt=""></img>
 
-My current, and largest, project is a [functional website builder](https://github.com/Tomgxz/Kraken).
+<br>
 
-[![Kraken](https://github-readme-stats.vercel.app/api/pin/?username=Tomgxz&repo=Kraken&theme=holi&show_icons=true&hide_border=true&bg_color=00000000)](https://www.github.com/Tomgxz/Kraken)
-[![Mic-Plot-Generator](https://github-readme-stats.vercel.app/api/pin/?username=Tomgxz&repo=Mic-Plot-Generator&theme=holi&show_icons=true&hide_border=true&bg_color=00000000)](https://www.github.com/Tomgxz/Mic-Plot-Generator)
+<img src="https://github.com/Tomgxz/Tomgxz/blob/metrics-renders/metrics.calendar.plugin.isocalendar.svg" alt=""></img>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Tomgxz/Tomgxz/output/github-contribution-grid-snake-dark.svg">
@@ -47,6 +52,7 @@ My current, and largest, project is a [functional website builder](https://githu
   <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/Tomgxz/Tomgxz/output/github-contribution-grid-snake.svg">
 </picture>
 
+<br>
 
 ![Programming Time Stats](https://github-readme-stats.vercel.app/api/wakatime?username=tom_gxz&theme=holi&hide_border=true&bg_color=00000000&custom_title=Programming%20Time%20This%20Week) 
 
