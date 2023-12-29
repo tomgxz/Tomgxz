@@ -40,10 +40,6 @@ Im Tom_gxz, and I make code that is horrific to read.
 
 <br>
 
-<img src="https://github.com/Tomgxz/Tomgxz/blob/metrics-renders/metrics.repos.plugin.repositories.pinned.svg" alt=""></img>
-
-<br>
-
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Tomgxz/Tomgxz/snk-renders/dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Tomgxz/Tomgxz/snk-renders/light.svg">
