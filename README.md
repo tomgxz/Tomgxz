@@ -16,19 +16,18 @@ Im Tom_gxz, and I make code that is horrific to read.
   + Object-Oriented
   + Databases, including SQL integration
   + Graphical Interfaces: PyGame, Tkinter, Kivy
-  + Discord.py integrations
-  + Web Hosting and Design 
-  + Django & Flask
+  + Discord.py
+  + Web Hosting: Django & Flask
 - <code><img height="20" alt="java" src="https://raw.githubusercontent.com/github/explore/5b3600551e122a3277c2c5368af2ad5725ffa9a1/topics/java/java.png"></code> Java
   + Android Studio
   + Minecraft Plugins and Mods
   + Database Integration
   + JSON
 - <code><img height="20" alt="html" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png"></code> <code><img height="20" alt="css" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png"></code> <code><img height="20" alt="javascript" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png"></code> HTML, CSS and Javascript
-  + Familiar with Bootstrap syntax
-  + Font Awesome Icons
+  + SCSS
+  + Bootstrap
   + Responsive design
-  + Familiar with accessibility requirements
+  + Accessibility requirements
   + GSAP
   + JQuery
   + AJAX
