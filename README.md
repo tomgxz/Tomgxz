@@ -49,9 +49,3 @@ Im Tom_gxz, and I make code that is horrific to read.
 <br>
 
 ![Programming Time Stats](https://github-readme-stats.vercel.app/api/wakatime?username=tom_gxz&theme=holi&hide_border=true&bg_color=00000000&custom_title=Programming%20Time%20This%20Week) 
-
-
-<!--
-<a href="https://twitter.com/">
-  <img align="right" alt="Twitter" width="21px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Logo_of_Twitter.svg/768px-Logo_of_Twitter.svg.png?20220821125553" />
-</a>-->
