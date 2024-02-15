@@ -1,7 +1,5 @@
 # Hello 👋
 
-Im Tom_gxz, and I make code that is horrific to read.
-
 <img src="https://github.com/Tomgxz/Tomgxz/blob/metrics-renders/metrics.base.concise.svg" alt=""></img>
 <img src="https://github.com/Tomgxz/Tomgxz/blob/metrics-renders/metrics.base.activity.svg" alt=""></img>
 
